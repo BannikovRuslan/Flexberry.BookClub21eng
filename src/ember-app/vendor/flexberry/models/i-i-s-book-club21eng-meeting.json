@@ -1,0 +1,68 @@
+﻿{
+  "name": "IISBookClub21engMeeting",
+  "modelName": "i-i-s-book-club21eng-meeting",
+  "className": "Meeting",
+  "nameSpace": "IIS.BookClub21eng",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "date",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [
+    {
+      "name": "presentation",
+      "relatedTo": "i-i-s-book-club21eng-presentation",
+      "inverse": "meeting"
+    }
+  ],
+  "projections": [
+    {
+      "name": "MeetingE",
+      "modelName": "i-i-s-book-club21eng-meeting",
+      "attrs": [
+        {
+          "name": "date",
+          "caption": "Date",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": [
+        {
+          "projectionName": "PresentationE",
+          "caption": "Presentation",
+          "name": "presentation",
+          "relatedTo": "i-i-s-book-club21eng-presentation",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "MeetingL",
+      "modelName": "i-i-s-book-club21eng-meeting",
+      "attrs": [
+        {
+          "name": "date",
+          "caption": "Date",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

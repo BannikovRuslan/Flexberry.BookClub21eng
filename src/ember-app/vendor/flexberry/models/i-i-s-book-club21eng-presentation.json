@@ -1,0 +1,165 @@
+﻿{
+  "name": "IISBookClub21engPresentation",
+  "modelName": "i-i-s-book-club21eng-presentation",
+  "className": "Presentation",
+  "nameSpace": "IIS.BookClub21eng",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "date",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "rating",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "review",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "uRLPresentation",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "uRLVideo",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "book",
+      "relatedTo": "i-i-s-book-club21eng-book",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "speaker",
+      "relatedTo": "i-i-s-book-club21eng-speaker",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "meeting",
+      "relatedTo": "i-i-s-book-club21eng-meeting",
+      "inverse": "presentation"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "PresentationE",
+      "modelName": "i-i-s-book-club21eng-presentation",
+      "attrs": [
+        {
+          "name": "date",
+          "caption": "Date",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "rating",
+          "caption": "Rating",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "uRLPresentation",
+          "caption": "U r l presentation",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "uRLVideo",
+          "caption": "U r l video",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "review",
+          "caption": "Review",
+          "hidden": false,
+          "index": 4
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "FirstName",
+          "lookupValueField": "firstName",
+          "relationName": "Speaker",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "firstName",
+              "caption": "First name",
+              "hidden": true,
+              "index": 6
+            }
+          ],
+          "index": 5,
+          "type": "standard",
+          "caption": "Speaker",
+          "name": "speaker",
+          "relatedTo": "i-i-s-book-club21eng-speaker",
+          "inverse": null
+        },
+        {
+          "lookupValue": "Title",
+          "lookupValueField": "title",
+          "relationName": "Book",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "title",
+              "caption": "Title",
+              "hidden": true,
+              "index": 8
+            }
+          ],
+          "index": 7,
+          "type": "standard",
+          "caption": "Book",
+          "name": "book",
+          "relatedTo": "i-i-s-book-club21eng-book",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

@@ -1,0 +1,36 @@
+﻿{
+  "applicationCaption": "Book club21eng",
+  "applicationTitle": "Book club21eng",
+  "items": [
+    {
+      "link": null,
+      "menuName": "book-club21eng",
+      "caption": "BookClub21eng",
+      "title": "BookClub21eng",
+      "children": [
+        {
+          "link": "i-i-s-book-club21eng-meeting-l",
+          "menuName": null,
+          "caption": "Meeting",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-book-club21eng-speaker-l",
+          "menuName": null,
+          "caption": "Speaker",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-book-club21eng-book-l",
+          "menuName": null,
+          "caption": "Book",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

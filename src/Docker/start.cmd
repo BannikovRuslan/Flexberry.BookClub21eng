@@ -1,0 +1,1 @@
+docker-compose -p bookclub21eng up -d
