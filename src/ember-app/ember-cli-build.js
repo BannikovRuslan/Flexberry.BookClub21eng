@@ -90,11 +90,11 @@ module.exports = function(defaults) {
 
   // guideline-icons
   app.import('vendor/guideline-icons.css');
-  app.import('vendor/fonts/guideline-icons/guideline-icons.eot', { destDir: 'assets/fonts/guideline-icons' });
-  app.import('vendor/fonts/guideline-icons/guideline-icons.ttf', { destDir: 'assets/fonts/guideline-icons' });
-  app.import('vendor/fonts/guideline-icons/guideline-icons.woff', { destDir: 'assets/fonts/guideline-icons' });
-  app.import('vendor/fonts/guideline-icons/guideline-icons.woff2', { destDir: 'assets/fonts/guideline-icons' });
-  app.import('vendor/fonts/guideline-icons/guideline-icons.svg', { destDir: 'assets/fonts/guideline-icons' });
+  app.import('vendor/fonts/guideline-icons/guideline-icons.eot', { destDir: 'assets/fonts' });
+  app.import('vendor/fonts/guideline-icons/guideline-icons.ttf', { destDir: 'assets/fonts' });
+  app.import('vendor/fonts/guideline-icons/guideline-icons.woff', { destDir: 'assets/fonts' });
+  app.import('vendor/fonts/guideline-icons/guideline-icons.woff2', { destDir: 'assets/fonts' });
+  app.import('vendor/fonts/guideline-icons/guideline-icons.svg', { destDir: 'assets/fonts' });
 
 
 
